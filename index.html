@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Linux Admin Tasks</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background: #f0f2f5;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background: linear-gradient(135deg, #004d99, #003366);
+            color: #fff;
+            padding: 30px 0;
+            text-align: center;
+            border-bottom: 5px solid #002244;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.8em;
+            font-weight: bold;
+        }
+        .container {
+            width: 85%;
+            margin: auto;
+            padding: 20px 0;
+        }
+        .task-section {
+            background: #fff;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 12px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .task-section:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+        }
+        h2 {
+            color: #004d99;
+            border-bottom: 3px solid #004d99;
+            padding-bottom: 12px;
+            margin-bottom: 20px;
+            font-size: 2em;
+        }
+        h3 {
+            color: #003366;
+            margin-top: 20px;
+            border-bottom: 2px solid #ddd;
+            padding-bottom: 8px;
+            font-size: 1.6em;
+        }
+        ul {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+        li {
+            padding: 12px 0;
+            border-bottom: 1px solid #ddd;
+        }
+        li ul {
+            padding-left: 20px;
+        }
+        li ul li {
+            border-bottom: none;
+        }
+        footer {
+            background: linear-gradient(135deg, #004d99, #003366);
+            color: #fff;
+            text-align: center;
+            padding: 15px;
+            border-top: 5px solid #002244;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            font-size: 1.2em;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>System Admin Tasks</h1>
+        </div>
+    </header>
+    <div class="container">
+        <div class="task-section">
+            <h2>L1 (Level 1) Tasks</h2>
+            <h3>Linux Administration:</h3>
+            <ul>
+                <li>Basic File System Management:
+                    <ul>
+                        <li>Managing file permissions</li>
+                        <li>Creating partitions on disks</li>
+                        <li>Mounting filesystems</li>
+                        <li>Compressing and decompressing files</li>
+                    </ul>
+                </li>
+                <li>User and Group Management:
+                    <ul>
+                        <li>Users and group management</li>
+                        <li>Granting SUDO privileges to groups and users</li>
+                    </ul>
+                </li>
+                <li>Basic Configuration and Maintenance:
+                    <ul>
+                        <li>Configuring NTP</li>
+                        <li>Managing CRON jobs</li>
+                        <li>OS installation through templates and ISO</li>
+                        <li>Quarterly changing the root password of all Linux servers</li>
+                        <li>Basic network configuration using nmcli and nmtui</li>
+                        <li>Basic DNS configuration</li>
+                        <li>Configuring Apache webserver</li>
+                    </ul>
+                </li>
+                <li>Basic System Monitoring and Troubleshooting:
+                    <ul>
+                        <li>Resolving hardware issues like disk, memory, and CPU utilization</li>
+                        <li>Maintaining server uptime</li>
+                        <li>Monitoring system logs for errors</li>
+                        <li>Backup agent installation</li>
+                    </ul>
+                </li>
+            </ul>
+            <h3>VMware and Nutanix:</h3>
+            <ul>
+                <li>VM Management:
+                    <ul>
+                        <li>VM creation using ISO on AHV cluster</li>
+                        <li>VM decommission on AHV cluster</li>
+                        <li>Snapshot management</li>
+                    </ul>
+                </li>
+                <li>Basic VMware Management:
+                    <ul>
+                        <li>Administering VMware hosts/clusters</li>
+                        <li>Managing networks and IPs</li>
+                        <li>ESXi hypervisor manual upgrades</li>
+                    </ul>
+                </li>
+                <li>Monitoring:
+                    <ul>
+                        <li>Monitoring datacenter devices like UPS, PDU, etc.</li>
+                    </ul>
+                </li>
+            </ul>
+            <h3>Windows:</h3>
+            <ul>
+                <li>Windows Server Management:
+                    <ul>
+                        <li>Windows server build and decommission</li>
+                        <li>Global system drive cleanup</li>
+                        <li>Reacting to CPU, memory, and disk utilization alerts</li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <div class="task-section">
+            <h2>L2 (Level 2) Tasks</h2>
+            <h3>Linux Administration:</h3>
+            <ul>
+                <li>Advanced Storage Management:
+                    <ul>
+                        <li>LVM management (creating LVM filesystems, managing physical volumes, volume groups, and logical volumes)</li>
+                        <li>LVM filesystem expansion</li>
+                        <li>Configuring partitioning on disks</li>
+                        <li>OCFS cluster filesystem expansion</li>
+                    </ul>
+                </li>
+                <li>Advanced Configuration and Management:
+                    <ul>
+                        <li>Firewall management</li>
+                        <li>SNMPV3 setup</li>
+                        <li>Adding server to the domain</li>
+                        <li>Permitting AD groups in realm</li>
+                    </ul>
+                </li>
+                <li>Advanced System Maintenance:
+                    <ul>
+                        <li>Red Hat subscription manager</li>
+                        <li>Kernel updates</li>
+                        <li>Network configuration with advanced tools</li>
+                        <li>Managing hard links and soft links</li>
+                        <li>Strong knowledge of boot process of Linux</li>
+                        <li>Advanced package management</li>
+                    </ul>
+                </li>
+                <li>Advanced Troubleshooting and Optimization:
+                    <ul>
+                        <li>Log file management and analysis</li>
+                        <li>Advanced troubleshooting of system performance and configuration issues</li>
+                    </ul>
+                </li>
+            </ul>
+            <h3>VMware and Nutanix:</h3>
+            <ul>
+                <li>Advanced Virtualization Management:
+                    <ul>
+                        <li>Administering VMware clusters (migrating VMs, managing networks and IPs)</li>
+                        <li>Hypervisor manual upgrades for standalone hosts</li>
+                        <li>Managing VMs on Nutanix from Prism Central and Prism Element</li>
+                        <li>AHV Cluster VM permissions management</li>
+                    </ul>
+                </li>
+                <li>Complex Troubleshooting and Escalation:
+                    <ul>
+                        <li>Escalating issues to local facilities and SMEs for action</li>
+                    </ul>
+                </li>
+            </ul>
+            <h3>Windows:</h3>
+            <ul>
+                <li>Advanced Windows Server Management:
+                    <ul>
+                        <li>Managing 3000+ Windows servers (2008-2019) across 3 vCenters</li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+   
+</body>
+</html>
